@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-watsonx" %}
-{% set version = "0.45.1" %}
+{% set version = "0.45.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_watsonx-{{ version }}.tar.gz
-  sha256: 82515f0929189996e78b5e06e108db9349beaaa89a72b2fcb67097bc57179cf2
+  sha256: e32ce226e62513f6ea488be1a0290ef642f9317afb0cbb2ecb55cd3415092eb3
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - opentelemetry-api >=1.28.0,<2.0.0
     - opentelemetry-instrumentation >=0.50b0
     - opentelemetry-semantic-conventions >=0.50b0
-    - opentelemetry-semantic-conventions-ai 0.4.11
+    - opentelemetry-semantic-conventions-ai >=0.4.12,<0.5
 
 test:
   imports:
