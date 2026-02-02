@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-watsonx" %}
-{% set version = "0.51.1" %}
+{% set version = "0.52.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_watsonx-{{ version }}.tar.gz
-  sha256: 50a808f3cf918d35bd0d98edd03be92bdd214934b3cbc12af4e5f063bc5ff1dc
+  sha256: 258a506cf5e8d49646d0da5d3703fa7195971d6e45f66b5817929c4c6341af66
 
 build:
   noarch: python
